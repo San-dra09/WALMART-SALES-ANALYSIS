@@ -87,16 +87,6 @@ The data runs **Feb 2010 through Oct 2012** (the dashboard's monthly chart caps 
 No single store wins every cut. Store 20 is the dominant performer by scale, but smaller stores like 28 and 10 lead under specific stress conditions, and Store 37 — nowhere near the top by revenue — is actually the most internally consistent. This is a strong candidate for follow-up segmentation: clustering stores by sensitivity profile and stability, not just ranking them by total revenue.
 
 ---
-
-## Recommendations
-
-1. **Prioritize holiday-aware forecasting.** Holiday weeks sell ~7.8% higher on average and include the single highest-grossing week in the dataset. Build separate demand models (or at least separate uplift factors) for the four major holidays rather than relying on one time-series model for all 52 weeks.
-2. **De-prioritize macroeconomic indicators as primary features.** CPI, unemployment, fuel price, and temperature all add minimal predictive value in isolation (|r| ≤ 0.11 across the board). They may still be worth including as minor secondary features, but shouldn't anchor the model.
-3. **Investigate the Store 20 vs. Store 33 gap directly.** An 8x spread between best and worst stores is a bigger opportunity than economic modeling — operational audits of underperforming stores could yield faster wins than further macro analysis.
-4. **Separate "biggest" from "steadiest" when ranking stores.** Store 20 wins on scale; Store 37 wins on consistency. A single leaderboard hides this — segment stores by both revenue tier and volatility before making decisions about which stores to study or replicate.
-5. **Use December as a stocking blueprint.** The repeatable, sharp December peak (and January drop-off) should directly inform inventory build-up and wind-down schedules — particularly given that the single biggest sales week on record was the week before Christmas 2010.
-
-  ---
   
 ## Methodology
 
@@ -106,4 +96,14 @@ No single store wins every cut. Store 20 is the dominant performer by scale, but
   - **Power BI** for dashboarding (Sales Overview + Store Analysis pages with cross-filtering by Store, Year, Month, and Holiday flag)
   - **Excel** for the correlation analysis (Pearson correlation between weekly sales and each economic variable), cross-verified here against the raw data.
 
+ ---
+ 
+## Recommendations
 
+1. **Prioritize holiday-aware forecasting.** Holiday weeks sell ~7.8% higher on average and include the single highest-grossing week in the dataset. Build separate demand models (or at least separate uplift factors) for the four major holidays rather than relying on one time-series model for all 52 weeks.
+2. **De-prioritize macroeconomic indicators as primary features.** CPI, unemployment, fuel price, and temperature all add minimal predictive value in isolation (|r| ≤ 0.11 across the board). They may still be worth including as minor secondary features, but shouldn't anchor the model.
+3. **Investigate the Store 20 vs. Store 33 gap directly.** An 8x spread between best and worst stores is a bigger opportunity than economic modeling — operational audits of underperforming stores could yield faster wins than further macro analysis.
+4. **Separate "biggest" from "steadiest" when ranking stores.** Store 20 wins on scale; Store 37 wins on consistency. A single leaderboard hides this — segment stores by both revenue tier and volatility before making decisions about which stores to study or replicate.
+5. **Use December as a stocking blueprint.** The repeatable, sharp December peak (and January drop-off) should directly inform inventory build-up and wind-down schedules — particularly given that the single biggest sales week on record was the week before Christmas 2010.
+
+ 
