@@ -96,6 +96,8 @@ No single store wins every cut. Store 20 is the dominant performer by scale, but
 4. **Separate "biggest" from "steadiest" when ranking stores.** Store 20 wins on scale; Store 37 wins on consistency. A single leaderboard hides this — segment stores by both revenue tier and volatility before making decisions about which stores to study or replicate.
 5. **Use December as a stocking blueprint.** The repeatable, sharp December peak (and January drop-off) should directly inform inventory build-up and wind-down schedules — particularly given that the single biggest sales week on record was the week before Christmas 2010.
 
+  ---
+  
 ## Methodology
 
 - **Data:** Weekly sales data for 45 Walmart stores (Feb 2010 – Oct 2012; 6,435 store-weeks), paired with weekly CPI, unemployment rate, fuel price, and temperature. Source: [Kaggle — Walmart Dataset](https://www.kaggle.com/datasets/yasserh/walmart-dataset).
