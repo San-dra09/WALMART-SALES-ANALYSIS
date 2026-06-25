@@ -76,7 +76,7 @@ The correlation analysis is the most important — and most counter-intuitive �
 | Weekly Sales vs Temperature | −0.0638 | Weak relationship |
 | Weekly Sales vs Fuel Price | 0.0095 | Almost no correlation |
 | Weekly Sales vs Unemployment | −0.1062 | Very weak relationship |
-| Weekly Sales vs CPI *(extra check)* | −0.0726 | Weak relationship |
+| Weekly Sales vs CPI | −0.0726 | Weak relationship |
 
 All four sit close to zero. **Rising fuel prices, unemployment, inflation, and seasonal temperature swings have, at most, a marginal direct effect on weekly sales at the aggregate level.** The high/low split confirms it at a coarser grain too: weeks with above-average unemployment average **$1.00M** in sales vs. **$1.09M** for below-average weeks — a real but small gap (~8%), nowhere near the holiday effect. This is a critical finding for the original business problem: a forecasting model that leans heavily on these macro indicators as primary predictors is unlikely to meaningfully improve accuracy. The scatter plots in the Store Analysis view visually confirm this — sales cluster in a wide band regardless of unemployment, fuel price, or temperature level, with no discernible linear trend.
 
@@ -86,7 +86,7 @@ All four sit close to zero. **Rising fuel prices, unemployment, inflation, and s
 CPI rose steadily across the dataset: **168.10 (2010) → 171.55 (2011) → 175.50 (2012)**. Despite sustained inflation, **total sales kept growing**, including new peaks in Dec 2010 and Dec 2011. This suggests Walmart's value positioning may make it relatively resilient to inflationary pressure — consistent with its reputation as a low-price retailer that benefits when consumers trade down.
 
 ### 5. Sales are highly seasonal, with December as the clear peak
-The data runs **Feb 2010 through Oct 2012** (the dashboard's monthly chart caps at Jun 2012 because of a Year/Month filter applied to it — the underlying dataset extends further). The Monthly Sales Trend shows a repeating pattern: steady mid-$200M months, then a sharp spike every December (**$288.8M in Dec 2010, $288.1M in Dec 2011**) before dropping sharply in January. This is a clean, repeatable seasonal signal — far stronger and more reliable than any of the economic indicators tested.
+The data runs **Feb 2010 through Oct 2012**. The Monthly Sales Trend shows a repeating pattern: steady mid-$200M months, then a sharp spike every December (**$288.8M in Dec 2010, $288.1M in Dec 2011**) before dropping sharply in January. This is a clean, repeatable seasonal signal.
 
 ### 6. "Top store" rankings depend entirely on which stress test you run
 - **Overall top performer (total & average sales):** Store 20
