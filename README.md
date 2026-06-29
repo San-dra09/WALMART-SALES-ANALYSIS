@@ -22,10 +22,10 @@ A supporting correlation analysis quantifies the strength of each economic relat
 ## Dashboard Preview
 
 ### Sales Overview
-![Sales Overview Dashboard](Sales_Overview.jpg)
+![Sales Overview Dashboard](Page1.jpg)
 
 ### Store Analysis
-![Store Analysis Dashboard](Store_Analysis.jpg)
+![Store Analysis Dashboard](Page2.jpg)
 
 ---
 
@@ -63,10 +63,10 @@ A supporting correlation analysis quantifies the strength of each economic relat
 ## Insights
 
 ### 1. Holidays punch far above their weight
-Holiday weeks generate **7.50% of total revenue** despite making up only **450 of 6,435 weeks** in the dataset (~7%). On a per-week basis, the average holiday week brings in **$1.12M vs. $1.04M** for a regular week — a **7.8% uplift**. That's a real, verified effect (not dashboard rounding), and it lines up with the original brief's instruction to weight holiday weeks roughly 5x in evaluation: holiday weeks aren't just *more frequent revenue events*, each one individually outsells a typical week. **The single highest-selling week in the entire dataset was the week of Dec 24, 2010 — led by Store 14 at $3.82M, nearly 4x that store's typical week.** Demand forecasting and inventory planning should be holiday-first, not economy-first.
+Holiday weeks generate **7.50% of total revenue** despite making up only **450 of 6,435 weeks** in the dataset (~7%). On a per-week basis, the average holiday week brings in **$1.12M vs. $1.04M** for a regular week, a **7.8% uplift**. That's a real, verified effect (not dashboard rounding), and it lines up with the original brief's instruction to weight holiday weeks roughly 5x in evaluation: holiday weeks aren't just *more frequent revenue events*, each one individually outsells a typical week. **The single highest-selling week in the entire dataset was the week of Dec 24, 2010 led by Store 14 at $3.82M, nearly 4x that store's typical week.** Demand forecasting and inventory planning should be holiday-first, not economy-first.
 
 ### 2. Store identity matters more than the economy
-The spread between the best store (Store 20, $301.40M) and the lowest (**Store 33, $37.16M**) is **over 8x**, a gap far larger than anything explained by unemployment, fuel prices, or weather. **Store 20 leads on total and average sales** ($2.11M average week vs. Store 33's $260K). But it's worth distinguishing "biggest" from "steadiest": when measured by coefficient of variation (how much a store's sales swing around its own average), **Store 20 is not the most stable** — stores like **37, 30, and 43** swing the least relative to their size, while **35, 7, and 15** are the most volatile. So the picture has two separate layers: store *scale* (which Store 20 dominates) and store *stability* (which smaller, steadier stores actually win). Either way, this points to store-level factors — location, format, local demographics — as the dominant driver of sales variance, not macroeconomic conditions.
+The spread between the best store (Store 20, $301.40M) and the lowest (**Store 33, $37.16M**) is **over 8x**, a gap far larger than anything explained by unemployment, fuel prices, or weather. **Store 20 leads on total and average sales** ($2.11M average week vs. Store 33's $260K). But it's worth distinguishing "biggest" from "steadiest": when measured by coefficient of variation (how much a store's sales swing around its own average), **Store 20 is not the most stable**. Stores like **37, 30, and 43** swing the least relative to their size, while **35, 7, and 15** are the most volatile. So the picture has two separate layers: store *scale* (which Store 20 dominates) and store *stability* (which smaller, steadier stores actually win). Either way, this points to store-level factors: location, format, local demographics as the dominant driver of sales variance, not macroeconomic conditions.
 
 ### 3. Classic "economic headwinds" barely move the needle
 The correlation analysis is the most important and most counter-intuitive finding in this project. Recomputed directly from the 6,435-row dataset, the values match the workbook's Correlation Analysis sheet exactly:
